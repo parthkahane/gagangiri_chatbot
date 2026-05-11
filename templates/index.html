@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagangiri Foods – A Legacy of Purity in Every Drop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="{{ url_for('static', filename='assets/1.png') }}" alt="Gagangiri Foods Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="top-wave">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V120H1200V0c-67.81,23.09-144.29,15.48-214.34,92.83-79,20.83-161.88-20.17-241.82-36.98C661.45,38.51,575.65,37.5,493.39,54.22c-58,10.79-114.16,30.13-172,41.86A600.21,600.21,0,0,1,0,0Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">"Gagangiri Foods – A Legacy of Purity in Every Drop."</h1>
+                    <p class="hero-subtitle">Three Generations. Seventeen Years. One Commitment — Quality Without Compromise.</p>
+                    <a href="#service" class="btn-cyan">Our Services</a>
+                </div>
+                <div class="hero-image-wrap">
+                    <div class="image-inner">
+                        <img src="{{ url_for('static', filename='assets/2.png') }}" alt="Pure Water Bottles" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="features-card">
+                    <h2 class="features-title">A Trusted Name In Bottled Water Industry</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134323.png') }}" alt="Maximum Purity"></div>
+                            <h3>Maximum Purity</h3>
+                            <p>Experience crystal-clear water with the highest level of purity, free from impurities and contaminants. Every drop meets strict quality standards to ensure your safety and satisfaction.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134346.png') }}" alt="Chlorine Free"></div>
+                            <h3>Chlorine Free</h3>
+                            <p>Enjoy water that's gentle on your body and tastes natural, without the harshness of chlorine. Our advanced treatment process eliminates chlorine for a healthier lifestyle.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134352.png') }}" alt="5 Steps Filtration"></div>
+                            <h3>5 Steps Filtration</h3>
+                            <p>Our state-of-the-art 5-step filtration system removes sediments, chemicals, and microbes. Each layer is designed to deliver clean, refreshing water every time.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134356.png') }}" alt="Healthy Water"></div>
+                            <h3>Healthy Water</h3>
+                            <p>Stay hydrated with water that supports your overall well-being. Enriched with essential minerals, it promotes better health and vitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="{{ url_for('static', filename='assets/3.png') }}" alt="Our Legacy" class="fade-in">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">A Dream That Became a Legacy.</h2>
+                        <div class="about-text">
+                            <p>In 2008, a humble dream began flowing from the heart of Pimpri Chinchwad, Maharashtra. Founded by Late Mahadev Rayba Aher under the name "Gagangiri Aqua," we set out to offer something pure — not just water, but trust.</p>
+                            <p>Over the years, Gagangiri Foods has evolved from a local venture to a trusted household name across Maharashtra, supplying to Pimpri Chinchwad, Pune and Lonavala region. Our unwavering commitment to quality and innovation is our true hallmark.</p>
+                            <p>From the initial days of manual bottling to today's fully automated 10,000 sq.ft facility in Ganesh Nagar, Talawade, our journey is a tribute to perseverance, innovation, and generational pride. Led by the vision of Mr. Mahadev Ranba Aher and today carried forward by Mr. Anil Ranba Aher and Mr. Shripad Anil Aher, we continue to bottle purity with every drop.</p>
+                            <p>Every sip you take connects you to our story — a story of hard work, dreams, and uncompromised quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section with YouTube -->
+        <section class="video-section">
+            <div class="container video-row">
+                <div class="video-col-text">
+                    <h2 class="section-title">Inside Our Purity Process</h2>
+                    <p class="section-subtitle">A glimpse of how we bottle trust, drop by drop.</p>
+                </div>
+                <div class="video-col-main">
+                    <div class="youtube-video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/FCN5b3zOQD8?rel=0&modestbranding=1&controls=1&showinfo=0&color=white&playsinline=1" 
+                            title="Gagangiri Foods - Inside Our Purity Process" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="video-col-btns">
+                    <a href="#service" class="btn-gradient">Explore Services</a>
+                    <a href="#about" class="btn-outline">Know Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section Header -->
+        <section id="service" class="services-header">
+            <div class="container text-center">
+                <h2 class="section-title">Protect Your Family with Best Water Filtering System Services</h2>
+            </div>
+        </section>
+
+        <section class="services-content">
+            <div class="container">
+                <div class="services-wrapper">
+                    <div class="services-center-img">
+                        <img src="{{ url_for('static', filename='assets/4.png') }}" alt="Water Delivery Man">
+                    </div>
+                    <div class="service-card card-1">
+                        <div class="service-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134433.png') }}" alt="Residential"></div>
+                        <h3>Residential Waters</h3>
+                        <p>Pure, safe drinking water tailored for every home.</p>
+                    </div>
+                    <div class="service-card card-2">
+                        <div class="service-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134439.png') }}" alt="Commercial"></div>
+                        <h3>Commercial Waters</h3>
+                        <p>Reliable water solutions for businesses of all sizes.</p>
+                    </div>
+                    <div class="service-card card-3">
+                        <div class="service-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134445.png') }}" alt="Filtration"></div>
+                        <h3>Filtration Plants</h3>
+                        <p>Advanced filtration systems for large-scale water purification.</p>
+                    </div>
+                    <div class="service-card card-4">
+                        <div class="service-icon"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 134449.png') }}" alt="Softening"></div>
+                        <h3>Water Softening</h3>
+                        <p>Say goodbye to hard water with efficient softening solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission Section -->
+        <section class="vision-mission">
+            <div class="container">
+                <div class="vision-grid">
+                    <div class="vision-content">
+                        <h2 class="section-title white-text">Purity with Purpose.</h2>
+                        <div class="mission-item reveal">
+                            <div class="mission-icon"><i class="fas fa-eye"></i></div>
+                            <div class="mission-text">
+                                <h3>Our Vision</h3>
+                                <p>"To be the most trusted and preferred name in packaged drinking water, blending tradition with technology to deliver purity and health to every household."</p>
+                            </div>
+                        </div>
+                        <div class="mission-item reveal">
+                            <div class="mission-icon"><i class="fas fa-rocket"></i></div>
+                            <div class="mission-text">
+                                <h3>Our Mission</h3>
+                                <p>"Our mission is to consistently deliver safe, pure, and refreshing drinking water by innovating our processes, honoring our family values, and upholding a legacy of trust, integrity, and service—while expanding our reach with a steadfast commitment to quality and sustainability."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-image reveal">
+                        <div class="image-frame">
+                            <img src="{{ url_for('static', filename='assets/image.png') }}" alt="Our Vision">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Private Label Section -->
+        <section class="private-label">
+            <div class="container">
+                <div class="private-label-card">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Customized Private Label Solutions</h2>
+                        <p class="section-subtitle">Want to brand your own water bottles? Partner with us for premium private label packaged drinking water solutions with customized branding.</p>
+                    </div>
+                    <div class="private-label-grid">
+                        <div class="label-item">
+                            <div class="label-icon"><i class="fas fa-mug-hot"></i></div>
+                            <h3>Hotels & Restaurants</h3>
+                            <p>Enhance your guest experience with custom-branded water bottles that reflect your brand's quality and hospitality.</p>
+                        </div>
+                        <div class="label-divider"></div>
+                        <div class="label-item">
+                            <div class="label-icon"><i class="fas fa-briefcase"></i></div>
+                            <h3>Corporate Events</h3>
+                            <p>Make your brand stand out at meetings and expos with personalized bottled water.</p>
+                        </div>
+                        <div class="label-divider"></div>
+                        <div class="label-item">
+                            <div class="label-icon"><i class="fas fa-gift"></i></div>
+                            <h3>Wedding Functions</h3>
+                            <p>Add a personalized touch to your big day with elegant, custom-labeled water bottles.</p>
+                        </div>
+                        <div class="label-divider"></div>
+                        <div class="label-item">
+                            <div class="label-icon"><i class="fas fa-store"></i></div>
+                            <h3>Retail Branding</h3>
+                            <p>Extend your brand into everyday moments with custom bottles that showcase your logo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bulk Supply Section -->
+        <section class="bulk-supply">
+            <div class="container text-center">
+                <h2 class="section-title">Bulk Supply Services</h2>
+                <p class="section-subtitle">We also offer bulk supply for institutions, educational campuses, commercial setups, and events, ensuring uninterrupted hydration with quality assurance.</p>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section class="why-choose">
+            <div class="container">
+                <div class="floating-card">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Why Choose Gagangiri Foods?</h2>
+                    </div>
+                    <div class="card-grid">
+                        <div class="grid-item">
+                            <div class="item-icon"><i class="fas fa-hourglass-half"></i></div>
+                            <h3>Fully automated high-speed production (120 bottles per minute)</h3>
+                            <p>Our state-of-the-art facility operates at 120 bottles per minute, ensuring consistent and efficient output.</p>
+                        </div>
+                        <div class="item-divider"></div>
+                        <div class="grid-item">
+                            <div class="item-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Stringent quality control measures</h3>
+                            <p>Every bottle undergoes rigorous quality checks to guarantee purity and safety.</p>
+                        </div>
+                        <div class="item-divider"></div>
+                        <div class="grid-item">
+                            <div class="item-icon"><i class="fas fa-clock"></i></div>
+                            <h3>Timely deliveries with efficient logistics</h3>
+                            <p>We maintain a streamlined logistics network to ensure prompt deliveries.</p>
+                        </div>
+                        <div class="item-divider"></div>
+                        <div class="grid-item">
+                            <div class="item-icon"><i class="fas fa-users"></i></div>
+                            <h3>Customer-first service philosophy</h3>
+                            <p>Our team is dedicated to providing responsive support and tailored solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section Header -->
+        <section id="products" class="products-header">
+            <div class="container text-center">
+                <h2 class="section-title">Packaged Drinking Water</h2>
+                <p class="section-subtitle">Trusted by thousands across Maharashtra, our Packaged Drinking Water ensures purity and taste in every bottle.</p>
+            </div>
+        </section>
+
+        <!-- Products Grid Section -->
+        <section class="products-grid">
+            <div class="container">
+                <div class="product-row">
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/6.png') }}" alt="200ml Bottle"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">200 ml</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹5.00</div>
+                            <p>Compact and convenient — ideal for travel or events.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/7.jpg') }}" alt="500ml Bottle"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">500 ml</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹10.00</div>
+                            <p>Perfect for daily hydration at work, school, or on the move.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/8.jpg') }}" alt="1 Liter Bottle"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">1 Liter</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹18.00</div>
+                            <p>A reliable choice for personal use with pure, refreshing taste.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-row mt-50">
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/9.jpg') }}" alt="2 Liter Bottle"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">2 Liter</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹30.00</div>
+                            <p>Great for small groups or families — more water, same quality.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/10.jpg') }}" alt="5 Liter Jar"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">5 Liter Jars</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹60.00</div>
+                            <p>Best for homes and offices needing bulk, safe drinking water.</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="{{ url_for('static', filename='assets/11.jpg') }}" alt="20 Liter Jar"></div>
+                        <div class="product-divider"></div>
+                        <div class="product-info">
+                            <span class="product-size">20 Liter Jars</span>
+                            <h3>Mineral Water Bottle</h3>
+                            <div class="product-price">₹40.00</div>
+                            <p>20L Refill Jar for just ₹40 — ideal for daily home & office use.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="testimonials-curve"></div>
+            <div class="container">
+                <div class="testimonial-header">
+                    <h2 class="section-title">What Our Client are Saying<br>About Gagangiri Foods</h2>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-img"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 154845.png') }}" alt="Sahil Raut"></div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">"At our restaurant, consistency is key — and Gagangiri delivers just that. Their customized water bottles add a premium touch our customers notice and appreciate."</p>
+                            <h4 class="testimonial-name">Sahil Raut</h4>
+                            <p class="testimonial-role">Restaurant Owner, Lonavala</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 154853.png') }}" alt="Shailesh Chaskar"></div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">"We've worked with Gagangiri for our corporate events, and the service is always on point. Timely delivery, spotless branding, and water you can trust every time."</p>
+                            <h4 class="testimonial-name">Shailesh Chaskar</h4>
+                            <p class="testimonial-role">Event Manager, Pune</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 154836.png') }}" alt="Sunny Mankar"></div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">"Working with Gagangiri has been a game-changer. Their commitment to quality and customer service helped streamline our supply chain seamlessly."</p>
+                            <h4 class="testimonial-name">Sunny Mankar</h4>
+                            <p class="testimonial-role">Wholesale Distributor, Pimpri Chinchwad</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 154901.png') }}" alt="Shubham Bhosale"></div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">"From a small shop to a chain of stores, we've grown with Gagangiri by our side. Their team understands reliability, and their product speaks for itself."</p>
+                            <h4 class="testimonial-name">Shubham Bhosale</h4>
+                            <p class="testimonial-role">Retailer, Pune</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-img"><img src="{{ url_for('static', filename='assets/Screenshot 2026-04-25 154828.png') }}" alt="Abhijeet Gade"></div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="testimonial-text">"Pure water, pure trust. We've relied on Gagangiri for over a decade, and their quality has never wavered."</p>
+                            <h4 class="testimonial-name">Abhijeet Gade</h4>
+                            <p class="testimonial-role">Resident, Pimpri Chinchwad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery CTA Section -->
+        <section id="delivery" class="delivery-cta">
+            <div class="cta-curve-top"></div>
+            <div class="container">
+                <div class="cta-grid">
+                    <div class="cta-image"><img src="{{ url_for('static', filename='assets/image.png') }}" alt="Delivery Scooter"></div>
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready To Get Our Premium Water Delivery Service.</h2>
+                        <p class="cta-subtitle">We offer our services within a 50 km radius, ensuring delivery within 2 hours across Pimpri-Chinchwad, Pune, and Lonavala through a network of 10+ reliable delivery partners.</p>
+                        <div class="cta-features">
+                            <div class="cta-feature"><i class="fas fa-check-circle"></i><span>Free Delivery</span></div>
+                            <div class="cta-feature"><i class="fas fa-check-circle"></i><span>7 Days In A Week Service</span></div>
+                        </div>
+                        <a href="#service" class="btn btn-cyan">Our Services</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-curve-bottom"></div>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="google-map-section">
+            <div class="container">
+                <div class="map-header text-center">
+                    <h2 class="section-title">Find Our Location</h2>
+                    <p class="section-subtitle">Visit our state-of-the-art facility in Pimpri-Chinchwad</p>
+                </div>
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.456789012345!2d73.8023!3d18.6445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e8b9b9b9b9%3A0x9b9b9b9b9b9b9b9b!2sGanesh%20Nagar%2C%20Talawade%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411062!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <div class="map-overlay-info">
+                        <div class="map-info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Gagangiri Foods</h4>
+                            <p>Gat no - 175, Saptshrungi Housing Society,<br>Ganesh Nagar, Talwade,<br>Pimpri-Chinchwad, Maharashtra 411062</p>
+                            <a href="https://maps.google.com/?q=Ganesh+Nagar+Talawade+Pimpri-Chinchwad+Maharashtra+411062" target="_blank" class="map-direction-btn">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-area-info">
+                    <div class="area-card"><i class="fas fa-map-marked-alt"></i><h3>50 km Service Radius</h3><p>We deliver across Pimpri-Chinchwad, Pune, and Lonavala region</p></div>
+                    <div class="area-card"><i class="fas fa-clock"></i><h3>2 Hour Delivery</h3><p>Express delivery within 2 hours of order placement</p></div>
+                    <div class="area-card"><i class="fas fa-truck-fast"></i><h3>10+ Delivery Partners</h3><p>Reliable network ensuring timely service</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col info-col">
+                    <div class="footer-logo"><img src="{{ url_for('static', filename='assets/1.png') }}" alt="Gagangiri Foods Logo"></div>
+                    <p class="footer-desc">Purity you can trust, quality you can taste. Three generations of commitment to excellence in every drop.</p>
+                    <div class="contact-info">
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><p>Ganesh Nagar, Talawade, Pimpri-Chinchwad, Maharashtra 411062</p></div>
+                        <div class="info-item"><i class="fas fa-envelope"></i><p>info@gagangirifoods.com</p></div>
+                        <div class="info-item"><i class="fas fa-phone-alt"></i><p>+91 98765 43210 / +91 91234 56789</p></div>
+                    </div>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#service">Our Services</a></li>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col form-col">
+                    <h3>Leave a Comment</h3>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Phone Number">
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn-cyan">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gagangiri Foods. All Rights Reserved. Designed with Purity.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/gagangirifoodsofficial"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-closed">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar"><img src="{{ url_for('static', filename='assets/1.png') }}" alt="Gagangiri Bot"></div>
+                <div class="chatbot-header-text"><h4>Gagangiri Assistant</h4><p>Online | Usually replies instantly</p></div>
+            </div>
+            <button class="chatbot-minimize"><i class="fas fa-minus"></i></button>
+            <button class="chatbot-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar"><img src="{{ url_for('static', filename='assets/1.png') }}" alt="Bot"></div>
+                <div class="message-content">
+                    <div class="message-text">👋 Hello! Welcome to Gagangiri Foods!<br><br>I'm here to help you with:<br>• 💧 Water bottle prices & sizes<br>• 🚚 Delivery information<br>• 📍 Service areas<br>• 🏭 Our purification process<br>• 📞 Contact details<br><br>What would you like to know?</div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-quick-replies" id="quickReplies">
+            <button class="quick-reply" data-question="prices">💵 Bottle Prices</button>
+            <button class="quick-reply" data-question="delivery">🚚 Delivery Info</button>
+            <button class="quick-reply" data-question="process">💧 Purification Process</button>
+            <button class="quick-reply" data-question="contact">📞 Contact Details</button>
+        </div>
+        <div class="chatbot-input-container">
+            <textarea id="chatbotInput" placeholder="Type your message..." rows="1"></textarea>
+            <button id="chatbotSendBtn" class="chatbot-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="chatbot-typing" id="chatbotTyping" style="display: none;"><span>Gagangiri Assistant is typing</span><span class="typing-dots">...</span></div>
+    </div>
+
+    <!-- Chatbot Trigger Button -->
+    <button id="chatbotTrigger" class="chatbot-trigger">
+        <i class="fas fa-comment-dots"></i>
+        <span class="chatbot-badge">1</span>
+    </button>
+
+    <div class="scroll-top"><i class="fas fa-chevron-up"></i></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
